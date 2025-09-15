@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>ค้นหาสินค้า (jQuery AJAX)</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h2>ค้นหาสินค้า (jQuery AJAX)</h2>
+
+  <div class="search-box">
+    <input type="text" id="keyword" placeholder="เช่น acer / dell พิมพ์คำค้นหาสินค้า" />
+    <button onclick="searchProduct()">ค้นหา</button>
+    <button class="reset" onclick="resetSearch()">ล้างค่า</button>
+  </div>
+
+  <div id="productSection">
+    <table id="productTable">
+      <thead>
+        <tr>
+          <th>ภาพ</th>
+          <th>รหัส</th>
+          <th>ชื่อสินค้า</th>
+          <th>ประเภท</th>
+          <th>ราคา</th>
+          <th>คงเหลือ</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="summary" id="summary"></div>
+</body>
+</html>
