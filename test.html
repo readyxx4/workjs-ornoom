@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function taskOne() {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                console.log("this is task 1");
+                resolve();
+            }, 1000);
+        });
+    }
+
+    function taskTwo() {
+        return new Promise((resolve) => {
+            console.log("this is task 2");
+            resolve();
+        });
+    }
+
+    function taskThree() {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                console.log("this is task 3");
+                resolve();
+            }, 1000);
+        });
+    }
+
+    async function main() {
+        await taskOne();
+        await taskTwo();
+        await taskThree();
+    }
+
+    main();
+</script>
+</body>
+</html>
