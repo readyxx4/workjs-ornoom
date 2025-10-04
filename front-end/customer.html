@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ระบบบันทึกลูกค้า (PHP CRUD: Create)</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>บันทึกข้อมูลลูกค้า</h1>
+
+    <form id="cusForm" class="form-card">
+      <label>ชื่อ-สกุล:</label>
+      <input type="text" name="cus_name" required>
+
+      <label>อีเมล:</label>
+      <input type="email" name="cus_username" required>
+
+      <label>รหัสผ่าน:</label>
+      <input type="password" name="cus_password" required>
+
+      <label>ยืนยันรหัสผ่าน:</label>
+      <input type="password" name="cus_confirm" required>
+
+      <button type="submit">บันทึกข้อมูล</button>
+    </form>
+
+    <p id="msg" class="message"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
