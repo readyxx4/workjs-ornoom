@@ -14,6 +14,6 @@ document.getElementById("cusForm").addEventListener("submit", async (e) => {
   msg.style.color = data.status === "success" ? "green" : "red";
 
   if (data.status === "success") {
-    e.target.reset(); // ล้างฟอร์มเมื่อบันทึกสำเร็จ
+    e.target.reset(); 
   }
 });
